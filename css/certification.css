@@ -1,0 +1,203 @@
+.certification {
+    min-height: 100vh;
+    padding: 150px 8%;
+    text-align: center;
+}
+
+/* TYPING TITLE */
+.typing-text {
+    font-size: 48px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #0d6efd;
+    width: 0;
+    animation: typing 2.2s steps(16) forwards, blink 0.7s infinite;
+}
+
+.typing-text strong {
+    color: #0d6efd;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* SUBTITLE */
+.sub-text {
+    margin-top: 18px;
+    color: #aaa;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 2.4s;
+}
+
+/* GRID */
+.certificate-grid {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    perspective: 1200px;
+}
+
+/* CARD */
+.certificate-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+    padding: 18px;
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* IMAGE */
+.certificate-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.certificate-card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.certificate-card span {
+    font-size: 13px;
+    color: #0d6efd;
+}
+
+/* HOVER (PREMIUM VIDEO FEEL) */
+.certificate-card:hover {
+    transform: translateY(-18px) rotateX(6deg) rotateY(-6deg);
+    box-shadow: 0 35px 80px rgba(13,110,253,0.45);
+}
+
+/* REVEAL */
+.certificate-card.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* ANIM */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 34px;
+    }
+}
+/* ICON */
+.cert-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+/* MAKE CARD CLICKABLE */
+.certificate-card {
+    text-decoration: none;
+    color: inherit;
+}
+.cert-wrapper {
+    min-height: 100vh;
+    padding: 80px 6%;
+    background: radial-gradient(circle at right, #4b2b7a, #020409);
+}
+
+/* MAIN BOX */
+.cert-container {
+    background: linear-gradient(135deg, #0a0f14, #020409);
+    border-radius: 22px;
+    padding: 50px;
+    box-shadow: 0 0 40px rgba(0,120,255,0.25);
+}
+
+/* HEADER */
+.cert-header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.cert-header p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.cert-card {
+    background: #0b0f14;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(0,120,255,0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* IMAGE */
+.cert-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+/* TEXT */
+.cert-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.cert-card p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 18px;
+}
+
+/* BUTTON */
+.btn-view {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-view:hover {
+    background: #0056d2;
+    transform: translateY(-2px);
+}
+
+/* HOVER CARD */
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0,120,255,0.35);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cert-container {
+        padding: 30px;
+    }
+}
