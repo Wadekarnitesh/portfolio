@@ -1,87 +1,87 @@
 .resume-section {
-    min-height: 100vh;
-    padding: 110px 6%;
+  min-height: auto;
+  padding: 50px 6% 100px;
 }
 
 /* MAIN CONTAINER */
 .resume-box {
-    background: linear-gradient(135deg, #0a0f14, #020409);
-    border-radius: 22px;
-    padding: 42px;
-    border: 1px solid rgba(13,110,253,0.7);
-    box-shadow: 0 0 40px rgba(13,110,253,0.3);
+  background: linear-gradient(135deg, #0a0f14, #020409);
+  border-radius: 22px;
+  padding: 42px;
+  border: 1px solid rgba(13, 110, 253, 0.7);
+  box-shadow: 0 0 40px rgba(13, 110, 253, 0.3);
 }
 
 /* TITLE */
 .resume-title {
-    font-size: 36px;
-    color: #0d6efd;
-    margin-bottom: 6px;
+  font-size: 36px;
+  color: #0d6efd;
+  margin-bottom: 6px;
 }
 
 .resume-subtitle {
-    font-size: 14px;
-    color: #aaa;
-    margin-bottom: 28px;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 28px;
 }
 
 /* HEADER */
 .resume-header h2 {
-    font-size: 20px;
-    margin-bottom: 6px;
+  font-size: 20px;
+  margin-bottom: 6px;
 }
 
 .resume-header p {
-    font-size: 13.5px;
-    color: #ccc;
-    margin-bottom: 4px;
+  font-size: 13.5px;
+  color: #ccc;
+  margin-bottom: 4px;
 }
 
 /* SECTION TITLES */
 .section-title {
-    margin-top: 28px;
-    margin-bottom: 12px;
-    font-size: 18px;
-    color: #0d6efd;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #0d6efd;
 }
 
 /* TEXT */
 .resume-box p {
-    font-size: 13.5px;
-    line-height: 1.7;
-    color: #ddd;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #ddd;
 }
 
 /* LISTS */
 .resume-list {
-    margin-left: 18px;
+  margin-left: 18px;
 }
 
 .resume-list li {
-    font-size: 13.5px;
-    line-height: 1.7;
-    color: #ddd;
-    margin-bottom: 10px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
 /* INLINE STRENGTHS */
 .resume-list.inline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
 }
 
 .resume-list.inline li {
-    list-style: disc;
+  list-style: disc;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .resume-box {
-        padding: 28px;
-    }
+  .resume-box {
+    padding: 28px;
+  }
 
-    .resume-title {
-        font-size: 30px;
-    }
+  .resume-title {
+    font-size: 30px;
+  }
 }

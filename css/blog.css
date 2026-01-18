@@ -1,76 +1,81 @@
 .blog-section {
-    min-height: 100vh;
-    padding: 110px 6%;
-    text-align: center;
+  min-height: auto;
+  padding: 100px 6% 50px;
+  text-align: center;
 }
 
 /* TITLE */
 .blog-title {
-    font-size: 36px;
-    color: #0d6efd;
-    margin-bottom: 10px;
+  font-size: 36px;
+  color: #0d6efd;
+  margin-bottom: 10px;
 }
 
 .blog-subtitle {
-    font-size: 14px;
-    color: #aaa;
-    margin-bottom: 50px;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 50px;
 }
 
 /* GRID */
 .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
 }
 
 /* CARD */
 .blog-card {
-    background: linear-gradient(135deg, #0a0f14, #020409);
-    border-radius: 22px;
-    padding: 28px;
-    text-align: left;
-    border: 1px solid rgba(13,110,253,0.7);
-    box-shadow: 0 0 35px rgba(13,110,253,0.25);
+  background: linear-gradient(135deg, #0a0f14, #020409);
+  border-radius: 22px;
+  padding: 28px;
+  text-align: left;
+  border: 1px solid rgba(13, 110, 253, 0.7);
+  box-shadow: 0 0 35px rgba(13, 110, 253, 0.25);
 }
 
 /* CARD TITLE */
 .blog-card h3 {
-    font-size: 18px;
-    margin-bottom: 14px;
-    color: #fff;
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #fff;
 }
 
 /* CARD TEXT */
 .blog-card p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #ccc;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ccc;
 }
 
 /* ACTIONS */
 .blog-actions {
-    margin-top: 22px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    font-size: 18px;
-    color: #aaa;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  color: #aaa;
 }
 
 .blog-actions span {
-    cursor: pointer;
-    transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .blog-actions span:hover {
-    transform: scale(1.2);
-    color: #0d6efd;
+  transform: scale(1.2);
+  color: #0d6efd;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .blog-title {
-        font-size: 30px;
-    }
+  .blog-title {
+    font-size: 30px;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
 }
